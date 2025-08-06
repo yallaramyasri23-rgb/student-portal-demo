@@ -1,0 +1,89 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.mood-selection h2,
+.mood-history h2 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.moods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mood {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: default;
+  background-color: #e0e0e0;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.mood:hover {
+  transform: scale(1.05);
+}
+
+.mood.happy { background-color: #ffe082; }
+.mood.sad { background-color: #b3e5fc; }
+.mood.stressed { background-color: #ffccbc; }
+.mood.excited { background-color: #c5e1a5; }
+.mood.tired { background-color: #d1c4e9; }
+
+.mood-history ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.mood-history li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.mood-history span {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
