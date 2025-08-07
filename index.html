@@ -3,33 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoodBoard</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>MoodBoard – Daily Mood Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🌈 MoodBoard</h1>
-    <p class="subtitle">Track how you feel today</p>
-
-    <section class="mood-selection">
-      <h2>How are you feeling?</h2>
-      <div class="moods">
-        <button class="mood happy">😊 Happy</button>
-        <button class="mood sad">😢 Sad</button>
-        <button class="mood stressed">😣 Stressed</button>
-        <button class="mood excited">🤩 Excited</button>
-        <button class="mood tired">😴 Tired</button>
-      </div>
-    </section>
-
-    <section class="mood-history">
-      <h2>Recent Mood History</h2>
-      <ul>
-        <li><span>😊</span> Monday - Happy</li>
-        <li><span>😴</span> Tuesday - Tired</li>
-        <li><span>😢</span> Wednesday - Sad</li>
-      </ul>
-    </section>
+    <h1>How are you feeling today?</h1>
+    <div class="mood-buttons">
+      <button data-mood="happy">😊 Happy</button>
+      <button data-mood="sad">😢 Sad</button>
+      <button data-mood="angry">😠 Angry</button>
+      <button data-mood="calm">😌 Calm</button>
+    </div>
+    <div class="message" id="mood-message"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
